@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+</head>
+<body>
+    <img src="" alt="Product Image">
+
+    <script>
+        var o = localStorage.getItem("image");
+        console.log(o);
+
+        var img = document.getElementsByTagName("img")[0];
+        img.setAttribute("src", o);
+        img.style.width = "200px";
+    </script> 
+</body>
+</html>
